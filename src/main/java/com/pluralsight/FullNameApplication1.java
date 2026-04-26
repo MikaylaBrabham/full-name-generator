@@ -14,8 +14,6 @@ public class FullNameApplication1 {
          // close the scanner
          scanner.close();
 
-
-
     }
     public static String getName(Scanner scanner) {
         // ask the user for their first name (required)
@@ -64,7 +62,7 @@ public class FullNameApplication1 {
         fullName += lastName;
 
         // add if statement for suffix name
-        if (!middleName.isEmpty()){
+        if (!suffixName.isEmpty()){
             fullName += ", " + suffixName;
         }
         return fullName;
