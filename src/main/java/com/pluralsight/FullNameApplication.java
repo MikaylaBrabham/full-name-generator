@@ -72,9 +72,9 @@ public class FullNameApplication {
 
                 // create a method displaying full name
         //  print prompt:  full name
-    public static String fullName(name){
+    //public static String fullName(name){
 
-        }
+      //  }
 
         //  if user has a suffix, full name comes first, add comma, add suffix
         // trim any leading or trailing spaces
