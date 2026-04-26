@@ -52,26 +52,21 @@ public class FullNameApplication1 {
         System.out.println("Enter your suffix: ");
         String suffixName = scanner.nextLine().trim();
 
-        // make sure all have trimmed leading and triling spaces
-        //String fullName = firstName + "|" + middleName + "|" + lastName + "|" + suffixName;
-        //String [] nameParts = fullName.split("\\|");
-       String fullName = firstName + " " + middleName + " " + lastName + ", " + suffixName;
-        if (middleName.isEmpty() && suffixName.isEmpty()){
-            String noSuffixMiddleName = firstName + " " + lastName;
-            System.out.println("Full Name: " + noSuffixMiddleName);
+        // create rules for full name using if statements to eb called in main
+       String fullName = firstName + " ";
+
+       // add if statement for middle name
+        if (!middleName.isEmpty()){
+            String noMiddle = fullName += middleName + " ";
         }
-        if (suffixName.isEmpty()){
-            String noSuffix = firstName + " " + middleName + " " + lastName;
-            System.out.println("Full Name: " + "," + noSuffix);
+
+        // add statement for last name
+        fullName += lastName;
+
+        // add if statement for suffix name
+        if (!middleName.isEmpty()){
+            fullName += ", " + suffixName;
         }
-        if (middleName.isEmpty()){
-            String noMiddle = firstName + " " + lastName + ", " + suffixName;
-            System.out.println("Full Name: " + noMiddle);
-        }
-        //else {
-         // String fullName = firstName + " " + middleName + " " + lastName + " ," + suffixName;
-         //   System.out.println("Full Name: " + fullName);
-        //}
         return fullName;
     }
 }
